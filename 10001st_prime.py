@@ -1,9 +1,9 @@
 def get_prime_number():
     # generate large enough list that would hopefully contain the prime number
-    # assume every number is prime
+    # assume every number is prime at the start
     prime_check = [True for i in range (1,1000000)]
 
-    # filter out non-primes
+    # then we filter out non-primes
     for i in range(2, len(prime_check)):
         current_num = i
         if prime_check[i-1]:
